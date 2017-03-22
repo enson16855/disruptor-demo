@@ -6,7 +6,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>disruptor</name>
-	<description>disruptor</description>
+	<description>java并发编程</description>
 
 	<properties>
 		<javadoc.skip>true</javadoc.skip>
@@ -21,7 +21,16 @@
 
 	<modules>
 		<module>disruptor.demo</module>
+		<module>disruptor.basic</module>
 	</modules>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.lmax</groupId>
+			<artifactId>disruptor</artifactId>
+			<version>3.3.6</version>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<plugins>
